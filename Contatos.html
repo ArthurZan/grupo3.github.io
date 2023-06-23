@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="empiriquitadas.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <title>Contatos</title>
+</head>
+<body>
+    <div class="conter">
+        <div class="inicio">
+            <div class="inicio-logo">
+                <img class="logo" src="1684103141544.png">
+            </div>
+            <div class="inicio-escritos">
+                <h1>Fale Comigo!</h1>
+                <p>Posso te ajudar com seu sorriso e estética</p>
+            </div>
+        </div>
+        <div class="contatos">
+            <div class="contatos-esquerda">
+                <h3>Mandar Mensagem</h3>
+                <form>
+                    <form method="post">
+                        <div class="agrupamento">
+                            <div class="grupo">
+                                <label>Nome</label>
+                                <input type="text" name="name" required placeholder="Seu Nome" id="name">
+                            </div>
+                            <div class="grupo">
+                                <label>Número</label>
+                                <input type="text" placeholder="Cel/Tel">
+                            </div>
+                        </div>
+                        <div class="agrupamento">
+                            <div class="grupo">
+                                <label>Email</label>
+                                <input type="email" required placeholder="Seu Email" id="email">
+                            </div>
+                            <div class="grupo">
+                                <label>Motivo</label>
+                                <input type="text" required placeholder="Qual o Motivo da Conversa?" id="subject">
+                            </div>
+                        </div>
+                        <label>Mensagem</label>
+                        <textarea id="message" rows="10" required placeholder="Escreva Sua Mensagem"></textarea>
+                        <button id="btn" type="submit">Enviar</button>
+                    </form>
+                </form>
+            </div>
+            <div class="contatos-direita">
+                <h3>Entre em contato</h3>
+                <table>
+                    <tr>
+                        <td>Email:</td>
+                        <td>svessecchi@hotmail.com</td>
+                    </tr>
+                    <tr>
+                        <td>Whatsapp:</td>
+                        <td>(17) 99234 - 3895</td>
+                    </tr>
+                    <tr>
+                        <td>Horários:</td>
+                    </tr>
+                    <tr>
+                        <td>Segunda à Quinta:</td>
+                        <td>16:00 às 20:00</td>
+                    </tr>
+                    <tr>
+                        <td>Sexta-Feira:</td>
+                        <td>9:00 às 18:00</td>
+                    </tr>
+                    <tr>
+                        <td>Sábado:     </td>
+                        <td>7:00 às 16:00</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="https://smtpjs.com/v3/smtp.js">
+</script>
+<script>
+    var btn = document.getElementById('btn');
+    btn.addEventListener('click', function(e){
+        e.preventDefault()
+        var name = document.getElementById('name').value;
+        var email = document.getElementById('email').value;
+        var subject = document.getElementById('subject').value;
+        var message = document.getElementById('message').value;
+        var body = 'name: ' +name + '<br/> email :' +email + '<br/> subject : ' +subject + '<br/> message : ' +message;
+        Email.send({
+    Host : "smtp.outlook.com",
+    Username : "Pedroso.br@outlook.com",
+    Password : "password",
+    To : 'them@website.com',
+    From : email,
+    Subject : subject,
+    Body : body
+}).then(
+  message => alert(message)
+);
+    })
+</script>
+</html>

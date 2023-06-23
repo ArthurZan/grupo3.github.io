@@ -1,0 +1,184 @@
+*{
+    padding: 0px;
+    margin:0px
+}
+a{
+    text-decoration: none;
+    color:black;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+ul{
+    list-style: none;
+}
+img{
+    width: 110px;
+}
+input[type="checkbox"]{
+    display: none;
+}
+nav{
+    background-color: #bf9fff;
+    width: 130px;
+    height: 100%;
+    left: -130px;
+    position: relative;
+}
+
+input[type="checkbox"]:checked ~ nav{
+    transform: translateX(130px);
+}
+ul{
+    background-color: #bf9fff;
+    top: 174px;
+    position: absolute;
+    width: 100%;
+}
+a{
+    display: block;
+    padding: 20px;
+    color: white;
+}
+a:hover{
+    background-color: #7be8b3;
+    color:white;
+}
+label{
+    padding: 15px;
+    position: absolute;
+    z-index: 1;
+}
+
+.foto8 img{
+    position: absolute;
+    top: 0px;
+    left: 130px;
+    width: 1389px;
+    height:193px;
+    
+}
+
+div.sobre p{
+    color: #7be8b3;
+    float: none;  
+    margin-top: 480px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    width: 200px;
+    text-align: center;
+    left: 320px;
+    position: absolute;
+    background-color:#1e0131;
+    width: 859px;
+    height: 45px;
+    
+}
+
+.perfil2 img{
+    position: absolute;
+    top: 240px;
+    left: 568px;
+    width: 300px;
+    
+}
+
+div.tperfil {
+    color: #3e0068;
+    position: absolute;
+    margin-top: 520px;
+    left: 320px;
+    float: none;
+    background-color:#bbfcdc;
+    width: 859px;
+    text-align: center;
+    
+    
+}
+
+div.tavali {
+    color: #1e0131;
+    position: absolute;
+    margin-top: 730px;
+    left: 320px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color:#7be8b3;
+    width: 859px;
+    height: 45px;
+    text-align: center;
+    
+
+}
+
+div.tback {
+    color: #1e0131;
+    position: absolute;
+    margin-top: 790px;
+    left: 320px;
+    background-color:#1e0131;
+    width: 859px;
+    height: 1318px;
+    text-align: center;
+}
+
+
+.avali1 img{
+    position: absolute;
+    top: 820px;
+    left: 630px;
+    width: 240px;
+    
+}
+
+div.tavali1 {
+    color: #FFFFFF;
+    position: absolute;
+    margin-top: 1050px;
+    left: 500px;
+    float: none;
+    text-align: center;
+    
+    
+}
+
+.avali2 img{
+    position: absolute;
+    top: 1250px;
+    left: 615px;
+    width: 280px;
+    
+}
+
+div.tavali2 {
+    color: #FFFFFF;
+    position: absolute;
+    margin-top: 1470px;
+    left: 500px;
+    float: none;
+    text-align: center;
+    
+}
+
+.avali3 img{
+    position: absolute;
+    top: 1730px;
+    left: 640px;
+    width: 250px;
+    
+}
+
+div.tavali3 {
+    color: #FFFFFF;
+    position: absolute;
+    margin-top: 1930px;
+    left: 500px;
+    float: none;
+    text-align: center;
+}
+
+.baixo img{
+    position: absolute;
+    top: 2200px;
+    width: 1518px;
+    height: 130px;
+}
+

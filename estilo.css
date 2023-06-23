@@ -1,0 +1,67 @@
+.body{
+    background-color:  #7be8b3 ;
+   }
+   
+   
+   .procedimentos{
+    padding: 0px 10px;
+    position: flex;
+    width: 0px;
+    height: 100px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 90px;
+    color: #56038E;
+    margin-left: 200px;
+
+   }
+    h2{
+        font-family: 'Courier New', Courier, monospace;
+        font-size:  50px;
+        border-radius: 5px;
+        background-color:;
+        padding: 20px 15px;
+       
+        text-align: center;
+        text color: ;
+        height: 82px;
+        color: #56038E;
+    
+   
+    }
+    
+    h3{
+        color: #56038E;
+        text-align: center;
+        font-size: 30px;
+        font-family: Arial, Helvetica, sans-serif;
+
+    }
+    p{
+        text-align: justify;
+        font-size: 25px;
+    }
+
+ 
+
+    /*Estilizando divs */
+    #orofacial{
+        width: 500px;
+        height: 100px;
+        display: float;
+        margin: 10px;
+        margin-top: 200px;
+       
+    }
+    #dentes{
+        width: 500px;
+        height: 100px;
+        display: float;
+        margin: 120px;
+        margin-top: 200px;
+      
+       
+    }
+
+    .container {
+        display: flex;
+      }
